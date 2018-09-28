@@ -1,0 +1,95 @@
+XML Input
+<?xml version="1.0" encoding="utf-8"?>
+<VALUATION_RESPONSE MISMOVersionID="2.6GSE">
+<REPORT AppraiserFileIdentifier="var!" />
+<PROPERTY _StreetAddress="var!"
+ _City="var!"
+ _PostalCode="var!">
+<_IDENTIFICATION CensusTractIdentifier="var!"
+ MapReferenceIdentifier="var!">
+<PROPERTY_IDENTIFICATION_EXTENSION>
+<PROPERTY_IDENTIFICATION_EXTENSION_SECTION ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET">
+<PROPERTY_IDENTIFICATION_EXTENSION_SECTION_DATA>
+<PARCEL_IDENTIFIER GSEAssessorsParcelIdentifier="var!" />
+</PROPERTY_IDENTIFICATION_EXTENSION_SECTION_DATA>
+</PROPERTY_IDENTIFICATION_EXTENSION_SECTION>
+</PROPERTY_IDENTIFICATION_EXTENSION>
+</_IDENTIFICATION>
+<_LEGAL_DESCRIPTION _TextDescription="var!" _Type="Other" _TypeOtherDescription="LongLegal" />
+<STRUCTURE PropertyStructureBuiltYear="var!"
+ StoriesCount="var!"
+ _DesignDescription="var!" />
+<SITE _AreaDescription="var!"
+ _DimensionsDescription="var!"
+ _ZoningClassificationIdentifier="var!"
+ _ZoningClassificationDescription="var!">
+<SITE_FEATURE _Type="Shape" _Comment="var!" />
+<FLOOD_ZONE NFIPMapPanelDate="var!">
+<FLOOD_ZONE_EXTENSION>
+<FLOOD_ZONE_EXTENSION_SECTION ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET">
+<FLOOD_ZONE_EXTENSION_SECTION_DATA>
+<FLOOD_ZONE_INFORMATION GSEFEMASpecialFloodHazardAreaIndicator="var!"
+ GSEFEMAFloodMapIdentifier="var!"
+ GSENFIPFloodZoneIdentifier="var!" />
+</FLOOD_ZONE_EXTENSION_SECTION_DATA>
+</FLOOD_ZONE_EXTENSION_SECTION>
+</FLOOD_ZONE_EXTENSION>
+</FLOOD_ZONE>
+</SITE>
+<NEIGHBORHOOD _Name="var!" />
+<_TAX _TotalSpecialTaxAmount="var!">
+<PROPERTY_TAX_EXTENSION>
+<PROPERTY_TAX_EXTENSION_SECTION ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET">
+<PROPERTY_TAX_EXTENSION_SECTION_DATA>
+<PROPERTY_TAX_AMOUNT GSEPropertyTaxTotalTaxAmount="var!" />
+</PROPERTY_TAX_EXTENSION_SECTION_DATA>
+</PROPERTY_TAX_EXTENSION_SECTION>
+</PROPERTY_TAX_EXTENSION>
+</_TAX>
+<LISTING_HISTORY ListedWithinPreviousYearIndicator="var!"
+ ListedWithinPreviousYearDescription="var!" />
+<PROPERTY_ANALYSIS _Type="AdverseSiteConditions" _Comment="var!" />
+<_OWNER>
+<PROPERTY_OWNER_EXTENSION>
+<PROPERTY_OWNER_EXTENSION_SECTION ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET">
+<PROPERTY_OWNER_EXTENSION_SECTION_DATA>
+<PROPERTY_OWNER GSEPropertyOwnerName="var!" />
+</PROPERTY_OWNER_EXTENSION_SECTION_DATA>
+</PROPERTY_OWNER_EXTENSION_SECTION>
+</PROPERTY_OWNER_EXTENSION>
+</_OWNER>
+<SALES_CONTRACT _Date="var!"
+ _Amount="var!"
+ _ReviewedIndicator="var!"
+ _ReviewComment="var!"
+ SellerIsOwnerIndicator="var!"
+ SalesConcessionIndicator="var!"
+ SalesConcessionAmount="var!"
+ DataSourceDescription="var!"
+ SalesConcessionDescription="var!">
+<SALES_CONTRACT_EXTENSION>
+<SALES_CONTRACT_EXTENSION_SECTION ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET">
+<SALES_CONTRACT_EXTENSION_SECTION_DATA>
+<SALES_TRANSACTION GSESaleType="var!" />
+</SALES_CONTRACT_EXTENSION_SECTION_DATA>
+</SALES_CONTRACT_EXTENSION_SECTION>
+</SALES_CONTRACT_EXTENSION>
+</SALES_CONTRACT>
+</PROPERTY>
+<VALUATION_METHODS _AdditionalDescription="When available, MLS photos are used to best reflect the condition of the property at the time of sale. This will sometimes cause the comp photo to be &quot;out of season&quot; from &#xA;the date of the appraisal. All comparables have had an exterior viewing by the appraiser.">
+<SALES_COMPARISON>
+<COMPARABLE_SALE PropertySequenceIdentifier="0" PropertySalesAmount="var!">
+<PRIOR_SALES PropertySalesAmount="var!"
+ DataSourceDescription="Auditor/Realist" DataSourceEffectiveDate="var!">
+<PRIOR_SALES_EXTENSION>
+<PRIOR_SALES_EXTENSION_SECTION ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET">
+<PRIOR_SALES_EXTENSION_SECTION_DATA>
+<PRIOR_SALE GSEPriorSaleDate="var!" />
+</PRIOR_SALES_EXTENSION_SECTION_DATA>
+</PRIOR_SALES_EXTENSION_SECTION>
+</PRIOR_SALES_EXTENSION>
+</PRIOR_SALES>
+</COMPARABLE_SALE>
+</SALES_COMPARISON>
+</VALUATION_METHODS>
+</VALUATION_RESPONSE>

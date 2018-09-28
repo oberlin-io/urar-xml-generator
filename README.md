@@ -45,7 +45,7 @@ Regular expressions can be quite helpful for unstructured data not in a table. T
 REGEXEXTRACT(flood_data_tab!A1, "\d{5}.\d{4}.")
 ```
 
-There are more complex sets of functions I employed in xml!B. Each cell is unique because it queries unique data and often requires unique math and logic. For example, the following does math on queried dates and based on time concatenates a particular nominal output.
+There are more complex sets of functions I employed in xml!B. Each cell is unique because it queries unique data and often requires unique math and logic. For example, the following does math on queried dates and based on time concatenates a particular nominal output. [Check this out for a description](https://github.com/oberljn/sheets-web-scrape).
 
 ```
 IF(

@@ -20,5 +20,27 @@ REGEXREPLACE(A2, "var!", B2)
 The regular expressions replace function takes the XML line in A2 and replaces the dummy variable with B2's value.
 
 ## Getting the Data
+Other tabs in the sheet house the particular data we wish to query into the XML tab's input column. Trying to avoid copying multiple pieces of data from one web page or PDF, the idea is to copy the entire web page or an entire table into its own Google Sheets tab.
+
+HTML tables will copy nicely into Google Sheets, VERBING the original table's structure. From the XML tab, a cell in column B (our XML values) can contain a QUERY() function. The following set of functions use regular expressions to check for a zip code in an address line and extracts and returns the zip code or else "Zip not found".
+
+```
+IF(
+  REGEXMATCH(
+    QUERY(base!A2:B, "SELECT B WHERE A = 'Site Address:'", 0),
+    ".*\d\d\d\d\d.*"),
+  REGEXEXTRACT(
+    PROPER(
+      QUERY(base!A2:B, "SELECT B WHERE A = 'Site Address:'", 0)), 
+    "\d\d\d\d\d"),
+  "Zip not found"
+)
+```
+
+Regular expressions can be quite helpful for unstructured data not in a table. The copied data will likely be pasted into Google Sheets under one column, every line filling one row each. For example, in order to scrape data from a PDF document, whose table structure does not translate to Sheets, I create a regular expressions pattern to capture the needed data. The following captures a flood zone map number
+
+Other points:
+  - Numerical values will not replace nominal values, so in xml!B wrap the results in TO_TEXT().
+
 
 ## Logic and Math
